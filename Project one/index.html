@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Web Site</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Top search bar */
+      #top-bar {
+        padding: 5px;
+        background-color: #fff;
+      }
+
+      #top-bar input[type="text"] {
+        width: 100px;
+        padding: 2px;
+      }
+
+      #top-bar input[type="submit"] {
+        padding: 2px 6px;
+      }
+
+      /* Blue navigation bar */
+      #nav-bar {
+        background-color: blue;
+        height: 20px;
+      }
+
+      /* Main layout */
+      #wrapper {
+        display: flex;
+      }
+
+      /* Left sidebar */
+      #sidebar {
+        background-color: yellow;
+        width: 200px;
+        min-height: 400px;
+        padding: 10px;
+      }
+
+      #sidebar ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      #sidebar ul li a {
+        color: #8b4513;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      #sidebar ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Main content */
+      #content {
+        padding: 10px 20px;
+        flex: 1;
+      }
+
+      #content h2 {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      #content img {
+        display: block;
+        width: 220px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      #content p {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Search Bar -->
+    <div id="top-bar">
+      <input type="text" name="search" />
+      <input type="submit" value="Search..." />
+    </div>
+
+    <!-- Blue Nav Bar -->
+    <div id="nav-bar"></div>
+
+    <!-- Main Layout -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Doc</a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div id="content">
+        <h2>My Web site</h2>
+
+        <img
+          src="solar.jpg"
+          alt="Solar Panels with devices"
+        />
+
+        <p>
+          As the software industry moves into the second decade of the 21st
+          century, software quality is increasingly becoming essential to all
+          businesses and knowledge of software testing is becoming necessary for
+          all software engineers. The course focus on the theoretical concepts
+          of Software Testing with high emphasis on inclusion of the practical
+          context which is equally needed to prepare the learner for the demands
+          of this field in the workplace.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
